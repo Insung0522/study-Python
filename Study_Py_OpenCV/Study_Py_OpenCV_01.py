@@ -20,4 +20,3 @@ capture.release()
 #모든 윈도우 창 제거 함수
 #특정 창만 닫는다면 cv2.destroyWindow(이름)
 cv2.destroyAllWindows()
-#test
