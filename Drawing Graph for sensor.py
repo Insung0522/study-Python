@@ -40,7 +40,7 @@ def draw_graph(ax, df, cnt):
     ax.grid(True)
 
     ax.set_xticks(range(0, len(df['id']), 50)) # x축 간격 50씩
-    # ax.set_yticks(range(0, 3500, 250))
+    # ax.set_yticks(range(0, 3000, 250))
                   
 # 각 데이터프레임에 대해 그래프 그리기
 for cnt, (ax, df) in enumerate(zip(axs.flat, df), start=1):
