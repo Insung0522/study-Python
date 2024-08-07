@@ -37,5 +37,18 @@ dst2 = cv2.pyrDown(src)
 cv2.imshow("src",src)
 cv2.imshow("dst",dst)
 cv2.imshow("dst2",dst)
+cv2.waitKey()       
+cv2.destroyAllWindows()
+
+# 크기 조절
+
+src = cv2.imread("Study_Py_OpenCV/champagne.jpg", cv2.IMREAD_COLOR)
+# resize(원본(src), 절대크기(dstSize), 상대크기(fx, fy), 보간번(interpolation))
+dst = cv2.resize(src, dsize = (640, 480), interpolation=cv2.INTER_AREA)
+dst2 = cv2.resize(src, dsize=(0,0), fx = 0.3, fy = 0.7, interpolation=cv2.INTER_LINEAR)
+
+cv2.imshow("src", src)
+cv2.imshow("dst", dst)
+cv2.imshow("dst2", dst2)
 cv2.waitKey()
 cv2.destroyAllWindows()
