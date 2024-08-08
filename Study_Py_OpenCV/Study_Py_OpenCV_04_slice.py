@@ -1,7 +1,7 @@
 import cv2
 
 # 자르기(slice)
-src = cv2.imread("Study_Py_OpenCV/pawns.jpg", cv2.IMREAD_COLOR)
+src = cv2.imread("Study_Py_OpenCV/src/pawns.jpg", cv2.IMREAD_COLOR)
 # OpenCV의 이미지는 numpy 배열 형식과 동일
 # src[높이(행), 너비(열)]로 관심 영역 설정
 # 리스트나 배열의 특정 영역을 자르는 방식과 동일
