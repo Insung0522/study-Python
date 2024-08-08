@@ -13,7 +13,7 @@ cv2.waitKey()
 cv2.destroyAllWindows()
 
 # 회전
-src = cv2.imread("Study_Py_OpenCV/ara.jpg", cv2.IMREAD_COLOR)
+src = cv2.imread("Study_Py_OpenCV/src/ara.jpg", cv2.IMREAD_COLOR)
 
 height, width, channel = src.shape # 해당 이미지의 높이, 넓이, 채널 값 지정
 # 2X3 회전 행렬 생성 함수. 회전 변환 행렬을 계산
@@ -29,7 +29,7 @@ cv2.waitKey()
 cv2.destroyAllWindows()
 
 # 확대 & 축소
-src = cv2.imread("Study_Py_OpenCV/fruits.jpg", cv2.IMREAD_COLOR)
+src = cv2.imread("Study_Py_OpenCV/src/fruits.jpg", cv2.IMREAD_COLOR)
 height, width, cahnnel = src.shape
 dst = cv2.pyrUp(src, dstsize=(width * 2, height * 2), borderType=cv2.BORDER_DEFAULT)
 dst2 = cv2.pyrDown(src)
@@ -42,7 +42,7 @@ cv2.destroyAllWindows()
 
 # 크기 조절
 
-src = cv2.imread("Study_Py_OpenCV/champagne.jpg", cv2.IMREAD_COLOR)
+src = cv2.imread("Study_Py_OpenCV/src/champagne.jpg", cv2.IMREAD_COLOR)
 # resize(원본(src), 절대크기(dstSize), 상대크기(fx, fy), 보간번(interpolation))
 dst = cv2.resize(src, dsize = (640, 480), interpolation=cv2.INTER_AREA)
 dst2 = cv2.resize(src, dsize=(0,0), fx = 0.3, fy = 0.7, interpolation=cv2.INTER_LINEAR)
