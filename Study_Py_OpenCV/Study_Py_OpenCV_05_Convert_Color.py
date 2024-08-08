@@ -1,6 +1,6 @@
 import cv2
 
-src = cv2.imread("Study_Py_OpenCV/crow.jpg", cv2.IMREAD_COLOR)
+src = cv2.imread("Study_Py_OpenCV/src/crow.jpg", cv2.IMREAD_COLOR)
 dst = cv2.cvtColor(src, cv2.COLOR_BGR2GRAY)
 #dst2 = cv2.cvtColor(src, cv2.COLOR_RGB2GRAY)
 
@@ -17,7 +17,7 @@ cv2.destroyAllWindows()
 # 즉, 10 진수의 픽셀값을 2 진수의 값으로 변경한 다음, 각 자릿수의 값을 반대로 바꾸게 됩니다.
 # 1은 0이 되며, 0은 1로 변경됩니다.
 
-src = cv2.imread("Study_Py_OpenCV/whitebutterfly.jpg", cv2.IMREAD_COLOR)
+src = cv2.imread("Study_Py_OpenCV/src/whitebutterfly.jpg", cv2.IMREAD_COLOR)
 dst = cv2.bitwise_not(src)
 
 cv2.imshow("src", src)
