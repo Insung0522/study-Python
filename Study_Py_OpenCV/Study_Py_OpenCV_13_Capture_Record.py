@@ -7,6 +7,9 @@ capture = cv2.VideoCapture("Study_Py_OpenCV/src/sample.mp4")
 # fourcc를 생성하여 디지털 미디어 포맷 코드를 생성합니다. cv2.VideoWriter_fourcc(*'코덱')을 사용하여 인코딩 방식을 설정합니다.
 # record 변수를 생성하여 녹화 유/무를 설정합니다.
 # Tip : FourCC(Four Character Code) : 디지털 미디어 포맷 코드입니다. 즉, 코덱의 인코딩 방식을 의미합니다.
+# FourCC 종류
+# CVID, Default, DIB, DIVX, H261, H263, H264, IV32, IV41, IV50, IYUB, MJPG, MP42, MP43, MPG4, MSVC, PIM1, Prompt, XVID
+# Tip : 단일 채널 이미지의 경우, 사용할 수 없는 디지털 미디어 포맷 코드가 존재합니다.
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
 record = False
 
