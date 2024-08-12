@@ -22,7 +22,7 @@ gray = cv2.cvtColor(src, cv2.COLOR_RGB2GRAY)
 # Tip : 최소 거리의 값이 5일 경우, 거리가 5 이하인 코너점은 검출하지 않습니다.
 corners = cv2.goodFeaturesToTrack(gray, 100, 0.01, 10, 1,blockSize = 10, useHarrisDetector = True, k = 0.03)
 # 해당 예제를 구현하다 보면 corners에서 float형으로 나오게 되어 circle이 안그려지는 현상이 있습니다. 그래서 아래에 해당 코드 한줄 기입해서 진행하였더니 해결하였습니다.
-# corners = np.int32(corners)
+corners = np.int32(corners)
 # 코너 검출 함수를 통해 corners가 반환되며, 이 배열안에 코너들의 좌표가 저장돼 있습니다
 # 반복문을 활용해 dst에 빨간색 원으로 지점을 표시합니다.
 for i in corners:
