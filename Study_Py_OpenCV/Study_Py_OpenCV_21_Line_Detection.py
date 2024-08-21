@@ -20,9 +20,6 @@ import cv2
 # 케니 엣지 알고리즘의 임곗값은 각각 5000과 1500로 주요한 가장자리만 남깁니다.
 # 커널은 5의 크기와 L2그라디언트를 True로 사용합니다.
 src = cv2.imread("Study_Py_OpenCV/src/road.jpg")
-cv2.imshow('sr',src)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
 dst = src.copy()
 gray = cv2.cvtColor(src, cv2.COLOR_BGR2GRAY)
 canny = cv2.Canny(gray, 5000, 1500, apertureSize = 5, L2gradient = True)
@@ -62,7 +59,7 @@ for i in lines:
 
     cv2.line(dst, (x1, y1), (x2, y2), (0, 0, 255), 2)
     cv2.circle(dst, (x0, y0), 3, (255, 0, 0), 5, cv2.FILLED)
-
+    cv2.circle
 cv2.imshow("dst", dst)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
