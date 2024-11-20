@@ -35,3 +35,16 @@
 |AI|<img src="https://img.shields.io/badge/YOLOv8-EE4C2C?style=for-the-badge&logo=ultralytics&logoColor=white">|
 |하드웨어|<img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white"> <img src="https://img.shields.io/badge/Camera-lightblue?style=for-the-badge">|
 
+
+
+
+## 데이터셋
+
+| **Dataset** | **Total** | **Human** | **Deer** | **Boar** | **Percentage (Human:Deer:Boar)**       |
+|-------------|-----------|-----------|----------|----------|---------------------------------------|
+| **Train**   | 8,091     | 2,699     | 2,699    | 2,693    | 33.37% : 33.37% : 33.26%             |
+| **Valid**   | 1,165     | 369       | 398      | 398      | 31.67% : 34.18% : 34.18%             |
+| **Test**    | 702       | 234       | 234      | 234      | 33.33% : 33.33% : 33.33%             |
+
+이 표는 마지막 열의 제목을 수정했으며, 기존 데이터는 그대로 유지했습니다.
+
